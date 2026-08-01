@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/FerhatDundar/github-mcp-connector/compare/v0.1.0...v0.1.1) (2026-08-01)
+
+
+### Bug Fixes
+
+* clarify github_list_repos type filter behavior for per-user listings ([#10](https://github.com/FerhatDundar/github-mcp-connector/issues/10)) ([1d57ad4](https://github.com/FerhatDundar/github-mcp-connector/commit/1d57ad401b997d998c4db360a4b67efcde2c0a2e))
+
 ## 0.1.0 (2026-08-01)
 
 Initial release.
