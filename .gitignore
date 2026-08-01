@@ -1,0 +1,4 @@
+.env
+*.token
+go-server/github-connector-server
+plugin/servers/go/github-connector-server

@@ -1,0 +1,8 @@
+{
+  "name": "github-connector",
+  "version": "0.1.0",
+  "description": "Work with GitHub: repos, branches, commits, file contents, issues, pull requests, and search. Local Go MCP server, no runtime dependencies.",
+  "author": {
+    "name": "Ferhat"
+  }
+}
