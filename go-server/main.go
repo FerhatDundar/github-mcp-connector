@@ -45,7 +45,7 @@ func main() {
 	s.AddTool(mcp.NewTool("github_list_repos",
 		mcp.WithDescription("List repositories for a user/org, or for the authenticated user if owner is left empty. Paginated via page/per_page."),
 		mcp.WithString("owner", mcp.Description("Username or org to list repos for. Leave empty to list the authenticated user's own repos.")),
-		mcp.WithString("type", mcp.Enum("all", "owner", "public", "private", "member"), mcp.DefaultString("all"), mcp.Description("Filter by repo type.")),
+		mcp.WithString("type", mcp.Enum("all", "owner", "public", "private", "member"), mcp.DefaultString("all"), mcp.Description("Filter by repo type. 'public'/'private' only take effect when owner is empty (the authenticated user's own repos) — GitHub's per-user repos endpoint ignores them and only ever returns that user's public repos.")),
 		mcp.WithString("sort", mcp.Enum("created", "updated", "pushed", "full_name"), mcp.DefaultString("full_name"), mcp.Description("Sort field.")),
 		mcp.WithString("direction", mcp.Enum("asc", "desc"), mcp.Description("Sort direction.")),
 		mcp.WithNumber("page", mcp.DefaultNumber(1), mcp.Description("Page number, 1-based.")),
